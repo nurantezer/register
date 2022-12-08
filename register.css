@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2022/11/24/02/28/clouds-7613361_960_720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* margin yerine padding vermek background düzenlerken daha mantıklı. */
+h1 {
+    padding: 10px;
+    text-align: center;
+}
+form{
+    /*! burada display inline block yapıp body de text align center yapabilirdik. */
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+border-radius: 10px;
+
+    width: fit-content;
+    margin: 20px auto;
+    padding: 30px;
+}
+/*!Label inline elementtir.Dolayısıyla width propertsi doğrudan çalışmaz.width labellara uzunluk verdi*/
+label{
+    display: inline-block;
+    width: 100px;
+}
+.lang-div,.gender-div {
+display: inline-block;
+}
+.lang-div label,.gender-div label {
+    width: auto;
+    margin-right: 20px;
+}
+.inputs {
+border-radius: 5px;
+width: 300px;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.radio-check {
+   margin-bottom: 20px;
+   /* margin-left: 10px; */
+}
+.btn-container{
+    text-align: center;
+}
+.btn-container input {
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(55, 100%, 70%);
+    padding: 10px;
+}
+.btn-container input:hover {
+     background-color: hsl(326, 100%, 40%);
+     color: aliceblue;
+     font-weight: 700;
+     cursor: pointer;
+}
+.textarea-div * {
+    vertical-align: middle;
+}
